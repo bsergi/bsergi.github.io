@@ -11,6 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+		<style type="text/css"> 
+		  .mobileShow {display: none;} 
+
+		  /* Smartphone Portrait and Landscape */ 
+		  @media only screen 
+		    and (min-device-width : 320px) 
+		    and (max-device-width : 480px){ 
+		      .mobileShow {display: inline;}
+		  }
+		</style>
+
+		<style type="text/css">
+		  .mobileHide { display: inline; } 
+
+		  /* Smartphone Portrait and Landscape */ 
+		  @media only screen 
+		    and (min-device-width : 320px) 
+		    and (max-device-width : 480px){ 
+		     .mobileHide { display: none;}
+		  }
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -38,7 +62,15 @@
 					</nav>
 
 				<center>
-					<embed src="Brian Sergi CV.pdf" width="80%" height="2100px" />
+					
+					<div class="mobileShow"> 
+						<object src="Brian Sergi CV.pdf" width="80%" height="2100px"> Download a pdf of my CV <a href="Brian Sergi CV.pdf">here</a>.</object>
+					</div>
+
+					<div class="mobileHide"> 
+						<embed src="Brian Sergi CV.pdf" width="80%" height="2100px" />
+					</div>
+
 				</center>
 
 				<!-- Footer -->
